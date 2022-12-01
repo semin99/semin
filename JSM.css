@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, 
+audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+body{font-family:'Pretendard',sans-serif !important;font-size:12px;line-height:1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+table {border-collapse:collapse;border-spacing:0;width:100%}
+hr{display:block;width:100%;height:0;font-size:0;line-height:0;clear:both;border:0;overflow:hidden}
+a,
+a:hover,
+a:active{text-decoration:none}
+button{outline:none}
+body.and{width:100%;min-width:auto;background:#fff}
+
+html {
+    scroll-behavior:smooth;
+}
+
+.tit{text-align:center;}
+.tit h2{font-size:40px;font-weight:600}
+.tit p{font-size:16px;color:#555;font-weight:400;margin:20px 0}
+
+.mypage{text-align:center;display:table;font-size:0;height:100vh;max-width:1600px;margin:0 auto}
+.mypage .text{display:table-cell;width:60%;vertical-align:middle}
+.mypage .text h2{font-size:4vw;font-weight:300;line-height:1.2}
+.mypage .text h2 span{background:#18ef9e;font-weight:bold;font-style:italic;}
+.mypage .text p{line-height:1.6;font-size:16px;font-weight:500;margin-top:50px;color:#555}
+.mypage .text p b{font-weight:bold;color:#6255f6}
+.mypage .img{display:table-cell;width:40%;padding:2%;vertical-align:middle}
+.mypage .img img{max-width:100%;height:auto;border-radius:100%}
+
+.portfolio{font-size:0;padding-top:8%}
+.portfolio h2{text-align:center;font-size:40px;margin:0 0 50px;font-weight:600}
+.portfolio li{display:inline-block;width:20%;}
+.portfolio li .img{position:relative}
+.portfolio li .img img{max-width:100%;height:auto;}
+.portfolio li .img a span{position:absolute;left:15px;bottom:15px;font-size:16px;color:#fff;font-weight:600}
+
+.portfolio li .loading_wrap{position:absolute;top:50%;transform:translateY(-50%);text-align:center;padding:0 5%;box-sizing:border-box}
+.portfolio li .loading_wrap p{text-align:center;color:#999;margin-top:15px;line-height:2;font-size:14px}
+.portfolio li .loading_wrap p > span{color:#333;display:block;font-size:22px;font-weight:600}
+
+.study{font-size:0;padding:8% 3% 2%;text-align:center;}
+.study .study_wrap{overflow-x:auto;overflow-y:}
+.study .study_wrap::-webkit-scrollbar{height:5px}
+.study ul{min-width:1100px;display:flex;flex-wrap: wrap;margin:50px 0}
+.study li{display:inline-block;width:calc(20% - 32px);border:2px solid #6255f6;border-radius:30px;margin-right:40px;text-align:center;position:relative;padding:5% 2%;box-sizing:border-box}
+.study li:last-child{margin:0}
+.study li:before{content:"";display:inline-block;background:#fff;width:44px;height:50px;position:absolute;top:50%;right:100%;transform:translateY(-50%)}
+.study li:first-child:before{display:none}
+.study li em{display:inline-block;width:44px;height:2px;background:#6255f6;position:absolute;top:50%;right:100%;transform:translateY(-50%)}
+.study li em:before{content:"";display:inline-block;background:#6255f6;width:2px;height:25px;position:absolute;bottom:100%;left:0}
+.study li em:after{content:"";display:inline-block;background:#1d0bda;width:2px;height:25px;position:absolute;top:100%;right:0}
+.study li span{display:inline-block;width:57px;line-height:57px;border-radius:100%;font-size:24px;font-weight:600;color:#fff;background:#1d0bda;position:absolute;left:50%;top:-28px;transform:translateX(-50%)}
+.study li h3{font-size:24px;color:#6255f6;font-weight:600;margin:20px 0}
+.study li p{font-size:16px;color:#555;line-height:1.6}
+.study li:nth-child(2n) span{top:auto;bottom:-28px}
+.study li:nth-child(1){border-color:#e9e7fe}
+.study li:nth-child(1) span,
+.study li:nth-child(2) em,
+.study li:nth-child(2) em:before{background:#e9e7fe}
+.study li:nth-child(2){border-color:#bcb6fb}
+.study li:nth-child(2) span,
+.study li:nth-child(2) em:after,
+.study li:nth-child(3) em,
+.study li:nth-child(3) em:before{background:#bcb6fb}
+.study li:nth-child(3){border-color:#8f86f9}
+.study li:nth-child(3) span,
+.study li:nth-child(3) em:after,
+.study li:nth-child(4) em,
+.study li:nth-child(4) em:before{background:#8f86f9}
+.study li:nth-child(4){border-color:#6355f6}
+.study li:nth-child(4) span,
+.study li:nth-child(4) em:after,
+.study li:nth-child(5) em,
+.study li:nth-child(5) em:before{background:#6355f6}
+.study li:nth-child(5){border-color:#3625f4}
+.study li:nth-child(5) span,
+.study li:nth-child(5) em:after,
+.study li:nth-child(6) em,
+.study li:nth-child(6) em:before{background:#3625f4}
+
+.fix_menu{position:fixed;top:50%;transform:translateY(-50%);right:20px;z-index:99;font-size:0;transition:all 0.5s}
+.fix_menu li a{display:block;font-size:12px;background:rgba(255,255,255,0.8);padding:15px 10px;color:#333;margin-top:-1px;border:1px solid #eee;text-align:center;font-weight:400}
+.fix_menu li:first-child a{border-radius:20px 20px 0 0;}
+.fix_menu li:last-child a{border-radius:0 0 20px 20px}
+.fix_menu li a i{display:block;font-size:24px;margin-bottom:5px}
+.fix_menu li a:hover i{color:#6255f6}
+
+::-webkit-scrollbar{width:5px;background-color:#f5f5f5;border-radius:0}
+::-webkit-scrollbar-thumb{background-color:#6255f6;border-radius:0}
+
+@media (max-width: 1200px) {
+	.portfolio li{width:50%}
+}
+@media (max-width: 900px) {
+	.mypage{display:block;height:auto}
+	.mypage .text,
+	.mypage .img{display:inline-block;width:100%;box-sizing:border-box;}
+	.mypage .text{padding:10% 5% 0}
+	.mypage .text h2{font-size:40px}
+	.mypage .img{padding:5%;max-width:450px}
+}
+
+@media (max-width: 600px) {
+	.mypage .text p br{display:none}
+	.tit h2,
+	.portfolio h2{font-size:30px}
+	.portfolio{padding-top:50px}
+	.portfolio li .loading_wrap p{line-height:1.4}
+	.portfolio li .loading_wrap p > span{display:none}
+	#loading{width:35px;height:35px}
+	.fix_menu{top:auto;bottom:20px;right:auto;left:50%;transform:translate(-50%,0)}
+	.fix_menu li{display:inline-block}
+	.fix_menu li a{margin-top:0;margin-left:-1px;padding:10px}
+	.fix_menu li:first-child a{border-radius:10px 0 0 10px;}
+	.fix_menu li:last-child a{border-radius:0 10px 10px 0}
+	.fix_menu li a span{display:none}
+}
+
+/* 로딩아이템 애니메이션 */
+#loading{display:inline-block;width:50px;height:50px;border:5px solid #dcdcdc;border-top-color:rgba(98,85,246,1);border-radius:50%;animation:spin 1s ease-in-out infinite;-webkit-animation: spin 1s ease-in-out infinite;text-align:center}
+
+@keyframes spin {
+  to {-webkit-transform:rotate(360deg)}
+}
+@-webkit-keyframes spin {
+  to {-webkit-transform:rotate(360deg)}
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-11-17 16:0:51
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
